@@ -1,0 +1,46 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f5f5f5; /* Lighter background color */
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+#calculator {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 300px; /* Increased max-width for a more spacious look */
+    gap: 10px;
+    border: 1px solid #ccc; /* Added border for a subtle boundary */
+    border-radius: 8px; /* Rounded corners */
+    overflow: hidden; /* Ensure rounded corners are visible */
+}
+
+#display {
+    grid-column: span 4;
+    height: 60px; /* Increased height for better visibility */
+    background-color: #f0f0f0; /* Slightly darker background color */
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 10px;
+    font-size: 28px; /* Increased font size for better readability */
+    border-bottom: 1px solid #ccc; /* Added bottom border for separation */
+}
+
+button {
+    height: 60px; /* Increased height for better touch targets */
+    font-size: 24px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: #e0e0e0; /* Lighter button color */
+    transition: background-color 0.3s ease; /* Smooth color transition on hover */
+
+}
+
+button:hover {
+    background-color: #ccc; /* Darker button color on hover */
+}
